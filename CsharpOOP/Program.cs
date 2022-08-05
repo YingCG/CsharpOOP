@@ -23,9 +23,4 @@ namespace CsharpOOP
             Console.ReadLine();
         }
     }
-
-    interface IOperations
-    {
-
-    }
 }
