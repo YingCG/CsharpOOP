@@ -1,18 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 25.0.1700.1
+VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsharpOOP", "CsharpOOP\CsharpOOP.csproj", "{01394506-72EC-4D12-B4C1-4A638A7312C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CsharpOOP", "CsharpOOP\CsharpOOP.csproj", "{01394506-72EC-4D12-B4C1-4A638A7312C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberGuesser", "NumberGuesser\NumberGuesser.csproj", "{FAE33099-4016-47E3-B279-DA3BB7C1717F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumberGuesser", "NumberGuesser\NumberGuesser.csproj", "{FAE33099-4016-47E3-B279-DA3BB7C1717F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{87CA4E54-0AA0-4B09-BDD8-9B3C8B343A6F}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniLibrary", "MiniLibrary\MiniLibrary.csproj", "{7F281CFB-BA06-4A06-BBC5-CFB065414C25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniLibrary", "MiniLibrary\MiniLibrary.csproj", "{7F281CFB-BA06-4A06-BBC5-CFB065414C25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoEventAndDelegates", "VideoEventAndDelegates\VideoEventAndDelegates.csproj", "{AC951BA7-B0B7-4C41-B44C-410E972D9B63}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +34,10 @@ Global
 		{7F281CFB-BA06-4A06-BBC5-CFB065414C25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F281CFB-BA06-4A06-BBC5-CFB065414C25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F281CFB-BA06-4A06-BBC5-CFB065414C25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC951BA7-B0B7-4C41-B44C-410E972D9B63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC951BA7-B0B7-4C41-B44C-410E972D9B63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC951BA7-B0B7-4C41-B44C-410E972D9B63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC951BA7-B0B7-4C41-B44C-410E972D9B63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
