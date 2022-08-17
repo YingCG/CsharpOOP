@@ -14,7 +14,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniLibrary", "MiniLibrary\MiniLibrary.csproj", "{7F281CFB-BA06-4A06-BBC5-CFB065414C25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoEventAndDelegates", "VideoEventAndDelegates\VideoEventAndDelegates.csproj", "{AC951BA7-B0B7-4C41-B44C-410E972D9B63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VideoEventAndDelegates", "VideoEventAndDelegates\VideoEventAndDelegates.csproj", "{AC951BA7-B0B7-4C41-B44C-410E972D9B63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentalCarApp", "CarStoreApp\RentalCarApp.csproj", "{DFECBF7B-228D-4F9A-9352-D85ED377403C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +40,10 @@ Global
 		{AC951BA7-B0B7-4C41-B44C-410E972D9B63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC951BA7-B0B7-4C41-B44C-410E972D9B63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC951BA7-B0B7-4C41-B44C-410E972D9B63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFECBF7B-228D-4F9A-9352-D85ED377403C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFECBF7B-228D-4F9A-9352-D85ED377403C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFECBF7B-228D-4F9A-9352-D85ED377403C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFECBF7B-228D-4F9A-9352-D85ED377403C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
