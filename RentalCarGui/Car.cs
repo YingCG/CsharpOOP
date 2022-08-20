@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace RentalCarApp
+﻿namespace RentalCarGui
 {
     public class Car
     {
+        public int Id { get; set; }
         public string Make { get; set; }
         public string Model { get; set; }
         public decimal Price { get; set; }
@@ -17,16 +14,17 @@ namespace RentalCarApp
             this.Price = 39.99M;
         }
 
-        public Car(string a, string b, decimal c)
+        public Car(int id, string make, string model, decimal price)
         {
-            this.Make = a;
-            this.Model = b;
-            this.Price = c;
+            this.Id = id;
+            this.Make = make;
+            this.Model = model;
+            this.Price = price;
         }
 
         public override string ToString()
         {
-            return ("Make: " + Make + " Model:" + Model + " Price: $" + Price);
+            return ("Make: " + Make + "  Model: " + Model + " Price: $" + Price);
         }
     }
 }
