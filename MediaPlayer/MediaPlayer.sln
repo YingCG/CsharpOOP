@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaPlayer", "MediaPlayer\MediaPlayer.csproj", "{D41F6E0A-D566-4FD5-B1B1-F3DC3C8C8371}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalStorageDatabase", "LocalStorageDatabase\LocalStorageDatabase.csproj", "{72DB0939-37F0-466C-8C97-58622CEF0177}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D41F6E0A-D566-4FD5-B1B1-F3DC3C8C8371}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D41F6E0A-D566-4FD5-B1B1-F3DC3C8C8371}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D41F6E0A-D566-4FD5-B1B1-F3DC3C8C8371}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D41F6E0A-D566-4FD5-B1B1-F3DC3C8C8371}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72DB0939-37F0-466C-8C97-58622CEF0177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72DB0939-37F0-466C-8C97-58622CEF0177}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72DB0939-37F0-466C-8C97-58622CEF0177}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72DB0939-37F0-466C-8C97-58622CEF0177}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0FE6F5C0-2EDD-4AAF-A76E-1AE014706B46}
+	EndGlobalSection
+EndGlobal
