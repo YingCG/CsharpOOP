@@ -12,8 +12,11 @@ namespace WindowsFormsSandwichStore
 {
     public partial class Store : Form
     {
+        private StoreDb _db;
+
         public Store()
         {
+            _db = new StoreDb();
             InitializeComponent();
             PopulateProductList();
         }
@@ -28,31 +31,7 @@ namespace WindowsFormsSandwichStore
 
         private void PopulateProductList()
         {
-            Product[] products = new[]
-            {
-                new Product
-                {
-                    Title = "Sandwich",
-                    Subtitle = "With your choice of protein",
-                    ProductImage = Properties.Resources.sandwich
-                },
-                new Product
-                {
-                    Title = "Fries",
-                    Subtitle = "Fries with herb or spice",
-                    ProductImage = Properties.Resources.fries
-
-                },
-                new Product
-                {
-                    Title = "Drink",
-                    Subtitle = "Fresh fruit juice",
-                    ProductImage = Properties.Resources.drinks
-
-                },
-            };
-
-            foreach (Product product in products)
+            foreach (Product product in _db.GetProducts())
             {
                 ProductControl productControl = new ProductControl
                 {

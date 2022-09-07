@@ -14,6 +14,8 @@ namespace WindowsFormsSandwichStore
         [STAThread]
         static void Main()
         {
+            //new StoreDb().Prepare();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Store());
