@@ -27,7 +27,7 @@ https://www.figma.com/proto/wieVbN1jciFnToxB0qdkIY/Event-driven-Programming?node
 ### Chapter 6 - Explore different tools in Window Form App
 - 09 - MediaPlayer - using Webcam 
 - 10 - LocalStorageDatabase
-- 11 - EmailDemoApp - Sending Email with SmtpClinet, using Mailtrap as a testing Server 
+- 11 - EmailDemoApp - Sending Email with SmtpClient, using Mailtrap as a testing Server 
 - 12 - ReadTextFile
 - 13 - FileSystemDemo
 - 14 - HeroApp
