@@ -12,7 +12,7 @@ namespace MusicAppMongoDB
 
         public AlbumDB()
         {
-            var setting = MongoClientSettings.FromConnectionString("Your Mongo Connection");
+            var setting = MongoClientSettings.FromConnectionString("mongodb+srv://curious-earthworm:MROUbfaPA9AzemT1@byo-cup-corner.sqa3qxz.mongodb.net/?retryWrites=true&w=majority");
             setting.ServerApi = new ServerApi(ServerApiVersion.V1);
             _client = new MongoClient(setting);
         }
