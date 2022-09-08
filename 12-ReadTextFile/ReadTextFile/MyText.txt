@@ -1,0 +1,1 @@
+Hello world.  I am learning to readfile with window form. Hopefully we can harvest the little fruit soon.
