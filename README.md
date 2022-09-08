@@ -9,9 +9,9 @@ https://www.figma.com/proto/wieVbN1jciFnToxB0qdkIY/Event-driven-Programming?node
 ### Chapter 2 - C# Object Oriented Programming - CsharpOOP
 
 ### Chapter 3 - Explore Window Form 
-03 - BirdApp
-04 - TipTacToe
-05 - CoinFlip
+- 03 - BirdApp
+- 04 - TipTacToe
+- 05 - CoinFlip
 
 ### Chapter 4 - Console App v.s. Window Form
 06 - RentalCarConsoleApp
