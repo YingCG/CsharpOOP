@@ -26,5 +26,13 @@ namespace MusicAppMongoDB
                 .Find(FilterDefinition<Album>.Empty)
                 .ToList();
         }
+
+
+        public void SaveAlbum(Album album)
+        {
+            _client.GetDatabase("music-app")
+                .GetCollection<Album>("albums")
+                .InsertOne(album);
+        }
     }
 }

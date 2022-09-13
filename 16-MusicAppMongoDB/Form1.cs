@@ -46,5 +46,12 @@ namespace MusicAppMongoDB
             dataGridView1.DataSource = albumBindingSource;
 
         }
+
+        private void btnToAdd_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Additem addAlbum = new Additem();
+            addAlbum.ShowDialog();
+        }
     }
 }

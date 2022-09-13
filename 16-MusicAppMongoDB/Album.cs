@@ -11,7 +11,7 @@ namespace MusicAppMongoDB
         public BsonObjectId Id { get; set; }
         public string AlbumName { get; set; }
         public string ArtistName { get; set; }
-        public int Year { get; set; }
+        public string Year { get; set; }
         public string ImageURL { get; set; }
 
     }
