@@ -9,7 +9,7 @@ namespace MongoDBApp.DataAccess
 {
     public class ChoreDataAccess
     {
-        private const string ConnectionString = " ";
+        private const string ConnectionString = "mongodb+srv://curious-earthworm:MROUbfaPA9AzemT1@byo-cup-corner.sqa3qxz.mongodb.net/?retryWrites=true&w=majority";
         private const string DatabaseName = "choreDB";
         private const string ChoreCollection = "chore_chart";
         private const string UserCollection = "users";
