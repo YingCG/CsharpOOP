@@ -39,6 +39,7 @@ namespace MusicAppMongoDB
             this.btnDelete = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -124,11 +125,17 @@ namespace MusicAppMongoDB
             this.btnExit.Name = "btnExit";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // textBox1
+            // 
+            resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.Name = "textBox1";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnDelete);
@@ -161,6 +168,7 @@ namespace MusicAppMongoDB
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label btnExit;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

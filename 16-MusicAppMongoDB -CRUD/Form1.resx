@@ -63,7 +63,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 60</value>
+    <value>16, 71</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
     <value>225, 42</value>
@@ -85,10 +85,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>243, 60</value>
+    <value>247, 71</value>
   </data>
   <data name="dataGridView1.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>62</value>
@@ -109,13 +109,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="btnToAdd.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
   <data name="btnToAdd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 108</value>
+    <value>16, 119</value>
   </data>
   <data name="btnToAdd.Size" type="System.Drawing.Size, System.Drawing">
     <value>225, 42</value>
@@ -136,13 +136,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnToAdd.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="btnStart.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
   <data name="btnStart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 392</value>
+    <value>16, 403</value>
   </data>
   <data name="btnStart.Size" type="System.Drawing.Size, System.Drawing">
     <value>225, 42</value>
@@ -163,10 +163,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnStart.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 155</value>
+    <value>16, 166</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>225, 231</value>
@@ -187,13 +187,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="btnEdit.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
   <data name="btnEdit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 440</value>
+    <value>16, 451</value>
   </data>
   <data name="btnEdit.Size" type="System.Drawing.Size, System.Drawing">
     <value>225, 42</value>
@@ -214,13 +214,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnEdit.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="btnDelete.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
   <data name="btnDelete.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 488</value>
+    <value>16, 499</value>
   </data>
   <data name="btnDelete.Size" type="System.Drawing.Size, System.Drawing">
     <value>225, 42</value>
@@ -241,7 +241,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnDelete.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -271,13 +271,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="btnExit.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="btnExit.Location" type="System.Drawing.Point, System.Drawing">
     <value>928, 19</value>
+  </data>
+  <data name="btnExit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="btnExit.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 5, 6, 5</value>
@@ -301,6 +304,27 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnExit.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>498, 19</value>
+  </data>
+  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>424, 31</value>
+  </data>
+  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
+    <value>textBox1</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -313,7 +337,7 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>977, 544</value>
+    <value>984, 585</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

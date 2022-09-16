@@ -26,7 +26,7 @@ namespace Marketplace
         {
             this.Hide();
             Dashboard login = new Dashboard();
-            login.ShowDialog();
+            login.Show();
         }
     }
 }

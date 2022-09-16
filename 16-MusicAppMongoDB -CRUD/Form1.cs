@@ -24,6 +24,8 @@ namespace MusicAppMongoDB
 
         public void UpdateAlbumList()
         {
+            // associate the list with the control (on top of form1)
+            // connect the list to grid view
             albumBindingSource.DataSource = albumsFromDB.GetAlbums();
             dataGridView1.DataSource = albumBindingSource;
         }
@@ -91,10 +93,6 @@ namespace MusicAppMongoDB
             }
         }
 
-        private void btnSaveList_Click(object sender, EventArgs e)
-        {
-            List<Album> albums = MyPlaylist.LoadSampleData();
-        }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
