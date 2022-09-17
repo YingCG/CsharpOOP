@@ -42,9 +42,10 @@ namespace Linq101Demo
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(50, 84);
+            this.label1.Location = new System.Drawing.Point(35, 50);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 25);
+            this.label1.Size = new System.Drawing.Size(60, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "All People";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -52,18 +53,21 @@ namespace Linq101Demo
             // filteredPeopleList
             // 
             this.filteredPeopleList.HideSelection = false;
-            this.filteredPeopleList.Location = new System.Drawing.Point(335, 114);
+            this.filteredPeopleList.Location = new System.Drawing.Point(234, 68);
+            this.filteredPeopleList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.filteredPeopleList.Name = "filteredPeopleList";
-            this.filteredPeopleList.Size = new System.Drawing.Size(442, 307);
+            this.filteredPeopleList.Size = new System.Drawing.Size(311, 186);
             this.filteredPeopleList.TabIndex = 1;
             this.filteredPeopleList.UseCompatibleStateImageBehavior = false;
+            this.filteredPeopleList.View = System.Windows.Forms.View.List;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(335, 84);
+            this.label2.Location = new System.Drawing.Point(234, 50);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 25);
+            this.label2.Size = new System.Drawing.Size(54, 15);
             this.label2.TabIndex = 2;
             this.label2.Text = "Filter List";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -71,34 +75,38 @@ namespace Linq101Demo
             // allPeopleDropdown
             // 
             this.allPeopleDropdown.FormattingEnabled = true;
-            this.allPeopleDropdown.Location = new System.Drawing.Point(50, 114);
+            this.allPeopleDropdown.Location = new System.Drawing.Point(35, 68);
+            this.allPeopleDropdown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.allPeopleDropdown.Name = "allPeopleDropdown";
-            this.allPeopleDropdown.Size = new System.Drawing.Size(255, 33);
+            this.allPeopleDropdown.Size = new System.Drawing.Size(180, 23);
             this.allPeopleDropdown.TabIndex = 3;
             this.allPeopleDropdown.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(50, 195);
+            this.label3.Location = new System.Drawing.Point(35, 117);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 25);
+            this.label3.Size = new System.Drawing.Size(94, 15);
             this.label3.TabIndex = 4;
             this.label3.Text = "Years Experience";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(50, 223);
+            this.numericUpDown1.Location = new System.Drawing.Point(35, 134);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(65, 31);
+            this.numericUpDown1.Size = new System.Drawing.Size(46, 23);
             this.numericUpDown1.TabIndex = 6;
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(50, 382);
+            this.btnUpdate.Location = new System.Drawing.Point(35, 229);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(255, 39);
+            this.btnUpdate.Size = new System.Drawing.Size(178, 23);
             this.btnUpdate.TabIndex = 7;
             this.btnUpdate.Text = "Show Selected";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -106,9 +114,9 @@ namespace Linq101Demo
             // 
             // Dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(560, 270);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.label3);
@@ -116,6 +124,7 @@ namespace Linq101Demo
             this.Controls.Add(this.label2);
             this.Controls.Add(this.filteredPeopleList);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Dashboard";
             this.Text = "Dashboard";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();

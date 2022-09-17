@@ -26,8 +26,11 @@ namespace Linq101Demo
             allPeopleDropdown.DataSource = people;
             allPeopleDropdown.DisplayMember = "FullName";
 
-            filteredPeopleList.DataSource = people.Where(x => x.YearsExperience >= 5).ToList();
-            filteredPeopleList.DisplayMember = "FullName";
+            var experiencedPeople = people.Where(x => x.YearsExperience >= 5).ToList();
+            foreach (var experiencedPerson in experiencedPeople)
+            {
+                filteredPeopleList.Items.Add(experiencedPerson.FullName);
+            }
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -45,7 +48,7 @@ namespace Linq101Demo
 
         private void UpdateBindings()
         {
-           
+
         }
     }
 }

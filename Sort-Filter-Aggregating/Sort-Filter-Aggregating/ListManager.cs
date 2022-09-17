@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text;
 
 namespace LinqLibrary
@@ -10,11 +11,13 @@ namespace LinqLibrary
         {
             List<Person> sampleData = new List<Person>();
 
-            sampleData.Add(new Person { FirstName = "Tim", LastName = "Corey", Birthday = Convert.ToDateTime("25/2/1999"), YearsExperience = 10 });
-            sampleData.Add(new Person { FirstName = "Someone", LastName = "Nice", Birthday = Convert.ToDateTime("12/5/1995"), YearsExperience = 16 });
-            sampleData.Add(new Person { FirstName = "Another", LastName = "Kind people", Birthday = Convert.ToDateTime("7/12/1983"), YearsExperience = 1 });
-            sampleData.Add(new Person { FirstName = "One", LastName = "Ohter Kind", Birthday = Convert.ToDateTime("2/2/1970"), YearsExperience = 5 });
-            sampleData.Add(new Person { FirstName = "Some", LastName = "Lovely human", Birthday = Convert.ToDateTime("9/7/1980"), YearsExperience = 7 });
+            var nzCulture = CultureInfo.GetCultureInfo("en-NZ");
+
+            sampleData.Add(new Person { FirstName = "Tim", LastName = "Corey", Birthday = Convert.ToDateTime("25/02/1999", nzCulture), YearsExperience = 10 });
+            sampleData.Add(new Person { FirstName = "Someone", LastName = "Nice", Birthday = Convert.ToDateTime("12/05/1995", nzCulture), YearsExperience = 16 });
+            sampleData.Add(new Person { FirstName = "Another", LastName = "Kind people", Birthday = Convert.ToDateTime("07/12/1983", nzCulture), YearsExperience = 1 });
+            sampleData.Add(new Person { FirstName = "One", LastName = "Ohter Kind", Birthday = Convert.ToDateTime("02/02/1970", nzCulture), YearsExperience = 5 });
+            sampleData.Add(new Person { FirstName = "Some", LastName = "Lovely human", Birthday = Convert.ToDateTime("09/07/1980", nzCulture), YearsExperience = 7 });
             
             return sampleData;
         }
