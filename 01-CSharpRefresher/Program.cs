@@ -1,6 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace Week1CsharpExercise
+namespace CSharpSyntax
 {
     class Program
     {
@@ -8,7 +9,14 @@ namespace Week1CsharpExercise
         {
             Console.WriteLine("Hello! These activities are formulated to refresh the previously learned C# concepts.");
 
-            Console.WriteLine("Press 1 to Fahrenheit Converter, 2 to Number Checker");
+            Console.WriteLine("Press 1 to Fahrenheit Converter" +
+                "\nPress 2 to Number Checker " +
+                "\nPress 3 To Get Average Number " +
+                "\nPress 4 To Multiply Table " +
+                "\nPress 5 To Calculator " +
+                "\nPress 6 to Speed Converter" +
+                "\nPress 7 to Get Volume Of Sphere");
+
             string choice = Console.ReadLine();
 
             if (choice == "1")
@@ -30,12 +38,78 @@ namespace Week1CsharpExercise
                 Console.WriteLine(NumberChecker(num1, num2));
                 Console.ReadLine();
             }
+            if (choice == "3")
+            {
+                Console.WriteLine("Please enter your 10 numbers");
+                int[] numbers = new int[10];
+
+                for (int i = 0; i < 10; i++)
+                {
+                    string input = Console.ReadLine();
+                    int inputAsInt = int.Parse(input);
+                    numbers[i] = inputAsInt;
+                }
+
+                Console.WriteLine(GetAverage(numbers));
+            }
+            if (choice == "4")
+            {
+                Console.WriteLine("Show Multiple Table of number: ");
+                string input = Console.ReadLine();
+                int inputNum = Convert.ToInt32(input);
+
+                MultiplicationTable(inputNum);
+            }
+            if (choice == "5")
+            {
+                Console.WriteLine("Enter 2 number: ");
+                string input = Console.ReadLine();
+                string[] number = input.Split(",");
+                float a = Convert.ToSingle(number[0]);
+                float b = Convert.ToSingle(number[1]);
+                Calculator(a, b);
+            }
+            if (choice == "6")
+            {
+                Console.WriteLine("Enter distance in meter: ");
+                string distance = Console.ReadLine();
+                double meter = Convert.ToDouble(distance);
+
+                Console.WriteLine("Input time (hour): ");
+                string inputHour = Console.ReadLine();
+                int hourToMins = Convert.ToInt32(inputHour) * 60;
+
+                Console.WriteLine("Input time (minutes): ");
+                string inputMins = Console.ReadLine();
+                int minutes = Convert.ToInt32(inputMins);
+
+                Console.WriteLine("Input time (seconds): ");
+                string inputSecond = Console.ReadLine();
+                int secondToMinutes = Convert.ToInt32(inputSecond) / 60;
+
+                int totalminutes = hourToMins + minutes + secondToMinutes;
+                SpeedChecker(meter, totalminutes);
+            }
+            if (choice == "7")
+            {
+                Console.WriteLine("Enter radius of a sphere to calculate the volume: ");
+                string inputRadius = Console.ReadLine();
+                double radius = Convert.ToDouble(inputRadius);
+                VolumeOfSphere(radius);
+            }
         }
 
         static float ConvertToFahrenheit(float celcius)
         {
             //converts celcius to Fahrenheit degrees
             float result = (celcius * 9f / 5f) + 32f;
+            return result;
+        }
+
+        static float ConvertToCelcius(float fahrenheit)
+        {
+            //converts Fahrenheit to celcius degrees
+            float result = (fahrenheit + 32f) * 5f / 9f;
             return result;
         }
 
@@ -46,116 +120,90 @@ namespace Week1CsharpExercise
             {
                 return num1 * num2;
             }
-
             else
             {
                 return num1 + num2;
             }
         }
+
+        // Task 3: 
+        // A method to take 10 numbers as input from user and find their sum and average. 
+        static float GetAverage(IList<int> numbers)
+        {
+            int sum = 0;
+            foreach (int number in numbers)
+            {
+                sum = (number + sum);
+            }
+            float average = sum / Convert.ToSingle(numbers.Count);
+            return average;
+        }
+
+        // Task 4:
+        // Display the multiplication table of a given integer
+        static void MultiplicationTable(int number)
+        {
+            Console.WriteLine("Multiply of " + number);
+            for (var i = 1; i <= 10; i++)
+            {
+                int line = i * number;
+                Console.WriteLine(i + " x " + line);
+            }
+        }
+
+        // Task 5: 
+        // print on screen the output of adding, subtracting, multiplying and dividing of two numbers which will be entered by the user.  
+        static void Calculator(float num1, float num2)
+        {
+            float add = num1 + num2;
+            float subtract = num1 - num2;
+            float multiply = num1 * num2;
+            float divide = num1 / num2;
+
+            //Console.WriteLine("Add: " + add);
+            //Console.WriteLine("Subtract: " + subtract);
+            //Console.WriteLine("Multiply: " + multiply);
+            //Console.WriteLine("Divide: " + divide);
+
+            Console.WriteLine("Add: {0}\nSubtract: {1}\nMultiply: {2}\nDivide: {3}",
+                add,
+                subtract,
+                multiply,
+                divide);
+        }
+
+        // Task 6:
+        // Takes distance and time as input and displays the speed in kilometers per hour and miles per hour. 
+        static void SpeedChecker(double meter, int mins)
+        {
+            double meterPerMinutes = meter / mins;
+            double meterPerSecond = meterPerMinutes / 60;
+            double kmPerMinutes = meterPerMinutes / 1000;
+            double kmPerHour = kmPerMinutes * 60;
+            double milesPerHour = kmPerHour / 1.609f;
+
+            Console.WriteLine("Your speed in meters / sec is: " + meterPerSecond);
+            Console.WriteLine("Your speed in km / h is: " + kmPerHour);
+            Console.WriteLine("Your speed in miles / h is: " + milesPerHour);
+        }
+
+        // Task 7:
+        // the radius of a sphere as input and calculate and display the surface area and volume of the sphere.   
+        /* Expected input and output
+
+        Radius: 2 
+        Expected Output: 
+        Surface Area of the Sphere: 50.26548 
+        Volume of the Sphere: 33.51032  */
+        static void VolumeOfSphere(double radius)
+        {
+            double volume = 4f / 3f * Math.PI * Math.Pow(radius, 3);
+            double area = 4f * Math.PI * Math.Pow(radius, 2);
+            Console.WriteLine("Surface Area of the Sphere: " + area);
+            Console.WriteLine("Volume of the Sphere: " + volume);
+
+        }
     }
 }
 
-/*
 
-Task 1: 
-
-Given a temperature in Celsius degrees, write a method that converts it to Fahrenheit degrees or vice versa. 
-Remember that temperature below -271.15°C (absolute zero) does not exist! 
-
-Expected Input and Output: 
-Temperature: 5
-Celsius(C) or Fahrenheit(F): F
-Conversion to Celsius:  -15
-Temperature: -300
-Celsius(C) or Fahrenheit(F): C
-
-Note: Temperature below -271.15°C (absolute zero) does not exist on earth! 
-
- 
-
-Task 2:  
-
-Given two integers, write a method that 
-returns their multiplication if they are both divisible by 2 or 3,
-otherwise returns their sum. 
-
-Expected input and output: 
-Enter two integers: 15, 30
-Divisible By 2 Or 3(15, 30) → 450
-Enter two integers: 2, 90
-Divisible By 2 Or 3(2, 90) → 180
-Enter two integers: 7, 12
-Divisible By 2 Or 3(7, 12) → 19 
-
---------------------------------------------------------------------------------------------------------
-10 mins Break 
---------------------------------------------------------------------------------------------------------
- 
-Task 3: 
-
-Write a program in C# Sharp to take 10 numbers as input from user and find their sum and average. 
-
- 
-
-Task 4: 
-
-Write a program in C# Sharp to display the multiplication table of a given integer.  
-Expected input and output 
-Input the number (Table to be calculated): 15 
-
-Expected Output: 
-15 X 1 = 15 
-... 
-... 
-15 X 10 = 150 
-
---------------------------------------------------------------------------------------------------------
-15 mins Break 
---------------------------------------------------------------------------------------------------------
- 
-Task 5: 
-
-Write a C# Sharp program to print on screen the output of adding, subtracting, multiplying and dividing of two numbers which will be entered by the user.  
-
-Expected input and output 
-
-Input the first number: 25 
-Input the second number: 4 
-Expected Output: 
-25 + 4 = 29 
-25 - 4 = 21 
-25 x 4 = 100 
-25 / 4 = 6 
-25 mod 4 = 1 
-
- 
-Task 6: 
-
-Write a C# Sharp program that takes distance and time as input and displays the speed in kilometers per hour and miles per hour.  
-
-Expected input and output 
-
-Input distance (meters): 50000 
-Input time (hour): 1 
-Input time(minutes): 35 
-Input time(seconds): 56 
-Expected Output: 
-Your speed in meters/sec is 8.686588 
-Your speed in km/h is 31.27172 
-Your speed in miles/h is 19.4355
-
---------------------------------------------------------------------------------------------------------
-10 mins Break 
---------------------------------------------------------------------------------------------------------
- 
-Task 7:  
-Write a C# Sharp program that takes the radius of a sphere as input and calculate and display the surface area and volume of the sphere.   
-Expected input and output 
-
-Radius: 2 
-Expected Output: 
-Surface Area of the Sphere: 50.26548 
-Volume of the Sphere: 33.51032 
-
-Note: Try completing these activities during the session time and save the code in your folder. 
-*/
