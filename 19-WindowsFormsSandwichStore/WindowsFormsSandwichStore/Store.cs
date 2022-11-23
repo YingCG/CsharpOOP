@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace WindowsFormsSandwichStore
@@ -11,41 +12,59 @@ namespace WindowsFormsSandwichStore
             PopulateProductList();
         }
 
-        // We define the action we want to do when a message is received
-        public void HandleProductSelected(object source, ProductEventArgs e)
-        {
-            pictureBox.Image = e.Product.ProductImage;
-            txtTitle.Text = e.Product.Title;
-            txtSubtitle.Text = e.Product.Subtitle;
-        }
-
         private void PopulateProductList()
         {
-            Product[] products = new[]
-            {
-                new Product
-                {
-                    Title = "Sandwich",
-                    Subtitle = "With your choice of protein",
-                    ProductImage = Properties.Resources.sandwich,
-                    Price = 10m
-                },
-                new Product
-                {
-                    Title = "Fries",
-                    Subtitle = "Fries with herb or spice",
-                    ProductImage = Properties.Resources.fries,
-                    Price = 3m
+            List<Product> products = new List<Product>();
 
-                },
-                new Product
-                {
-                    Title = "Drink",
-                    Subtitle = "Fresh fruit juice",
-                    ProductImage = Properties.Resources.drinks,
-                    Price = 2m
-                },
-            };
+            //Product[] products = new[]
+            //{
+            //    new Product
+            //    {
+            //        Title = "Sandwich",
+            //        Subtitle = "With your choice of protein from kumara pattie or fried chicken",
+            //        ProductImage = Properties.Resources.sandwich,
+            //        Price = 10m
+            //    },
+            //    new Product
+            //    {
+            //        Title = "Fries",
+            //        Subtitle = "Fries with herb or spice",
+            //        ProductImage = Properties.Resources.fries,
+            //        Price = 3m
+
+            //    },
+            //    new Product
+            //    {
+            //        Title = "Drink",
+            //        Subtitle = "Fresh fruit juice",
+            //        ProductImage = Properties.Resources.drinks,
+            //        Price = 2m
+            //    },
+            //};
+            products.Add(new Product() {
+                Title = "Sandwich",
+                Subtitle = "With your choice of protein from kumara pattie or fried chicken",
+                ProductImage = Properties.Resources.sandwich,
+                Price = 10m
+            });
+
+            products.Add(new Product()
+            {
+                Title = "Fries",
+                Subtitle = "Fries with herb or spice",
+                ProductImage = Properties.Resources.fries,
+                Price = 3m
+
+            });
+
+            products.Add(new Product()
+            {
+                Title = "Drink",
+                Subtitle = "Fresh fruit juice",
+                ProductImage = Properties.Resources.drinks,
+                Price = 2m
+
+            });
 
             foreach (Product product in products)
             {
@@ -58,6 +77,14 @@ namespace WindowsFormsSandwichStore
                 productControl.OnProductSelected += HandleProductSelected;
                 flowLayout.Controls.Add(productControl);
             }
+        }
+
+                // We define the action we want to do when a message is received
+        public void HandleProductSelected(object source, ProductEventArgs e)
+        {
+            pictureBox.Image = e.Product.ProductImage;
+            txtTitle.Text = e.Product.Title;
+            txtSubtitle.Text = e.Product.Subtitle;
         }
 
         public event DiscountEventHandler OnDiscountApplied;

@@ -32,9 +32,9 @@ namespace WindowsFormsSandwichStore
             this.flowLayout = new System.Windows.Forms.FlowLayoutPanel();
             this.txtTitle = new System.Windows.Forms.Label();
             this.txtSubtitle = new System.Windows.Forms.Label();
-            this.btn_AddToCart = new System.Windows.Forms.Button();
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.txbDiscount = new System.Windows.Forms.TextBox();
+            this.lblPrice = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,16 +42,16 @@ namespace WindowsFormsSandwichStore
             // 
             this.flowLayout.BackColor = System.Drawing.Color.DarkOrange;
             this.flowLayout.Location = new System.Drawing.Point(0, -1);
-            this.flowLayout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayout.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayout.Name = "flowLayout";
-            this.flowLayout.Size = new System.Drawing.Size(309, 349);
+            this.flowLayout.Size = new System.Drawing.Size(321, 349);
             this.flowLayout.TabIndex = 0;
             // 
             // txtTitle
             // 
             this.txtTitle.AutoSize = true;
             this.txtTitle.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTitle.Location = new System.Drawing.Point(346, 183);
+            this.txtTitle.Location = new System.Drawing.Point(388, 184);
             this.txtTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.Size = new System.Drawing.Size(46, 22);
@@ -61,31 +61,20 @@ namespace WindowsFormsSandwichStore
             // txtSubtitle
             // 
             this.txtSubtitle.AutoSize = true;
-            this.txtSubtitle.Location = new System.Drawing.Point(347, 206);
+            this.txtSubtitle.Location = new System.Drawing.Point(389, 207);
             this.txtSubtitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.txtSubtitle.MaximumSize = new System.Drawing.Size(200, 40);
             this.txtSubtitle.Name = "txtSubtitle";
             this.txtSubtitle.Size = new System.Drawing.Size(49, 13);
             this.txtSubtitle.TabIndex = 3;
             this.txtSubtitle.Text = "Sub Title";
             // 
-            // btn_AddToCart
-            // 
-            this.btn_AddToCart.BackColor = System.Drawing.Color.DarkOrange;
-            this.btn_AddToCart.ForeColor = System.Drawing.Color.White;
-            this.btn_AddToCart.Location = new System.Drawing.Point(350, 240);
-            this.btn_AddToCart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_AddToCart.Name = "btn_AddToCart";
-            this.btn_AddToCart.Size = new System.Drawing.Size(143, 29);
-            this.btn_AddToCart.TabIndex = 5;
-            this.btn_AddToCart.Text = "Add to Cart";
-            this.btn_AddToCart.UseVisualStyleBackColor = false;
-            // 
             // pictureBox
             // 
             this.pictureBox.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox.Image = global::WindowsFormsSandwichStore.Properties.Resources.sandwich;
-            this.pictureBox.Location = new System.Drawing.Point(360, 53);
-            this.pictureBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox.Location = new System.Drawing.Point(402, 54);
+            this.pictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox.Name = "pictureBox";
             this.pictureBox.Size = new System.Drawing.Size(117, 121);
             this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -94,26 +83,36 @@ namespace WindowsFormsSandwichStore
             // 
             // txbDiscount
             // 
-            this.txbDiscount.Location = new System.Drawing.Point(360, 12);
+            this.txbDiscount.Location = new System.Drawing.Point(402, 13);
             this.txbDiscount.Name = "txbDiscount";
             this.txbDiscount.Size = new System.Drawing.Size(117, 20);
             this.txbDiscount.TabIndex = 6;
             this.txbDiscount.Text = "Enter your discount";
             this.txbDiscount.TextChanged += new System.EventHandler(this.txbDiscount_TextChanged);
             // 
+            // lblPrice
+            // 
+            this.lblPrice.AutoSize = true;
+            this.lblPrice.Location = new System.Drawing.Point(389, 263);
+            this.lblPrice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPrice.Name = "lblPrice";
+            this.lblPrice.Size = new System.Drawing.Size(31, 13);
+            this.lblPrice.TabIndex = 7;
+            this.lblPrice.Text = "Price";
+            // 
             // Store
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
-            this.ClientSize = new System.Drawing.Size(533, 348);
+            this.ClientSize = new System.Drawing.Size(622, 348);
+            this.Controls.Add(this.lblPrice);
             this.Controls.Add(this.txbDiscount);
-            this.Controls.Add(this.btn_AddToCart);
             this.Controls.Add(this.txtSubtitle);
             this.Controls.Add(this.txtTitle);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.flowLayout);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Store";
             this.Text = "SanwichStore";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
@@ -128,8 +127,8 @@ namespace WindowsFormsSandwichStore
         private System.Windows.Forms.PictureBox pictureBox;
         private System.Windows.Forms.Label txtTitle;
         private System.Windows.Forms.Label txtSubtitle;
-        private System.Windows.Forms.Button btn_AddToCart;
         private System.Windows.Forms.TextBox txbDiscount;
+        private System.Windows.Forms.Label lblPrice;
     }
 }
 

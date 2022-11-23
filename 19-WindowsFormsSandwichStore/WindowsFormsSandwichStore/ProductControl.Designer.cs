@@ -43,7 +43,7 @@ namespace WindowsFormsSandwichStore
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.Controls.Add(this.imgIcon);
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(106, 115);
             this.panel1.TabIndex = 1;
@@ -52,7 +52,7 @@ namespace WindowsFormsSandwichStore
             // 
             this.imgIcon.Image = global::WindowsFormsSandwichStore.Properties.Resources.fries;
             this.imgIcon.Location = new System.Drawing.Point(5, 10);
-            this.imgIcon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.imgIcon.Margin = new System.Windows.Forms.Padding(2);
             this.imgIcon.Name = "imgIcon";
             this.imgIcon.Size = new System.Drawing.Size(96, 93);
             this.imgIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -77,6 +77,7 @@ namespace WindowsFormsSandwichStore
             this.txtSubTitle.ForeColor = System.Drawing.Color.Black;
             this.txtSubTitle.Location = new System.Drawing.Point(110, 53);
             this.txtSubTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.txtSubTitle.MaximumSize = new System.Drawing.Size(200, 0);
             this.txtSubTitle.Name = "txtSubTitle";
             this.txtSubTitle.Size = new System.Drawing.Size(49, 13);
             this.txtSubTitle.TabIndex = 3;
@@ -102,7 +103,7 @@ namespace WindowsFormsSandwichStore
             this.Controls.Add(this.txtSubTitle);
             this.Controls.Add(this.txtTitle);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ProductControl";
             this.Size = new System.Drawing.Size(313, 114);
             this.Click += new System.EventHandler(this.ProductControl_Click);

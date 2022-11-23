@@ -8,21 +8,6 @@ namespace WindowsFormsSandwichStore
     {
         private Product _product;
 
-        public ProductControl()
-        {
-            InitializeComponent();
-            foreach (Control control in Controls)
-            {
-                control.Click += ProductControl_Click;
-            }
-        }
-
-        public void HandleApplyDiscount(object source, DiscountEventArgs e)
-        {
-            var discount = _product.Price * e.DiscountPercentage / 100;
-            lblPrice.Text = (_product.Price - discount).ToString("C");
-        }
-
         public Product Product
         {
             private get
@@ -39,6 +24,16 @@ namespace WindowsFormsSandwichStore
             }
         }
 
+        public ProductControl()
+        {
+            InitializeComponent();
+            foreach (Control control in Controls)
+            {
+                control.Click += ProductControl_Click;
+            }
+        }
+
+
         // We say to the consumers that this is the shape of their mailbox
         public event ProductEventHandler OnProductSelected;
 
@@ -51,6 +46,12 @@ namespace WindowsFormsSandwichStore
             //{
             //    OnProductSelected(sender, new ProductEventArgs(_product));
             //}
+        }
+
+        public void HandleApplyDiscount(object source, DiscountEventArgs e)
+        {
+            var discount = _product.Price * e.DiscountPercentage / 100;
+            lblPrice.Text = (_product.Price - discount).ToString("C");
         }
 
 

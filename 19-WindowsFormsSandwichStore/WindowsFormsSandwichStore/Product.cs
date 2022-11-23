@@ -7,6 +7,6 @@ namespace WindowsFormsSandwichStore
         public string Title { get; set; }
         public string Subtitle { get; set; }
         public Image ProductImage { get; set; }
-        public decimal Price { get; internal set; }
+        public decimal Price { get; set; }
     }
 }
