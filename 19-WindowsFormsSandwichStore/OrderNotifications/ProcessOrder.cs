@@ -6,7 +6,8 @@ namespace OrderNotifications
     {
         public void ProcessOrderFor(string name)
         {
-            Console.WriteLine("There is an order from {0}", name);
+            Console.WriteLine("Hi team, We have a new order");
+            Console.WriteLine("Customer: {0}", name);
         }
     }
 }

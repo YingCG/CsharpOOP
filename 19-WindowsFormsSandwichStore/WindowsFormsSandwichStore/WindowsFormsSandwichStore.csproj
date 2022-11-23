@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DiscountEventArgs.cs" />
+    <Compile Include="DiscountEventHandler.cs" />
     <Compile Include="Store.cs">
       <SubType>Form</SubType>
     </Compile>

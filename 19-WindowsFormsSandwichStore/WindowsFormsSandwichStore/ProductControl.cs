@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace WindowsFormsSandwichStore
@@ -21,7 +17,13 @@ namespace WindowsFormsSandwichStore
             }
         }
 
-        internal Product Product
+        public void HandleApplyDiscount(object source, DiscountEventArgs e)
+        {
+            var discount = _product.Price * e.DiscountPercentage / 100;
+            lblPrice.Text = (_product.Price - discount).ToString("C");
+        }
+
+        public Product Product
         {
             private get
             {
@@ -33,6 +35,7 @@ namespace WindowsFormsSandwichStore
                 txtTitle.Text = value.Title;
                 txtSubTitle.Text = value.Subtitle;
                 imgIcon.Image = value.ProductImage;
+                lblPrice.Text = value.Price.ToString("C");
             }
         }
 
@@ -43,6 +46,11 @@ namespace WindowsFormsSandwichStore
         {
             // We post a message to the mail box
             OnProductSelected?.Invoke(sender, new ProductEventArgs(_product));
+
+            //if (OnProductSelected != null)
+            //{
+            //    OnProductSelected(sender, new ProductEventArgs(_product));
+            //}
         }
 
 

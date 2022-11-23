@@ -29,7 +29,6 @@ namespace WindowsFormsHeroApp
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lbl_name = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.checkbox_group = new System.Windows.Forms.GroupBox();
@@ -59,9 +58,32 @@ namespace WindowsFormsHeroApp
             this.hScrollBar3 = new System.Windows.Forms.HScrollBar();
             this.hScrollBar2 = new System.Windows.Forms.HScrollBar();
             this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dateTime_depart = new System.Windows.Forms.DateTimePicker();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.dateTime_arrive = new System.Windows.Forms.DateTimePicker();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.lbl_tracking = new System.Windows.Forms.Label();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.lbl_progress = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.checkbox_group.SuspendLayout();
             this.preferred_transport.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_name
@@ -100,7 +122,7 @@ namespace WindowsFormsHeroApp
             this.checkbox_group.Size = new System.Drawing.Size(228, 114);
             this.checkbox_group.TabIndex = 3;
             this.checkbox_group.TabStop = false;
-            this.checkbox_group.Text = "Special Skills";
+            this.checkbox_group.Text = "Checklist";
             // 
             // chk_time
             // 
@@ -216,7 +238,7 @@ namespace WindowsFormsHeroApp
             // 
             // btn_create
             // 
-            this.btn_create.Location = new System.Drawing.Point(385, 25);
+            this.btn_create.Location = new System.Drawing.Point(361, 635);
             this.btn_create.Margin = new System.Windows.Forms.Padding(2);
             this.btn_create.Name = "btn_create";
             this.btn_create.Size = new System.Drawing.Size(137, 32);
@@ -238,7 +260,7 @@ namespace WindowsFormsHeroApp
             this.preferred_transport.Size = new System.Drawing.Size(229, 72);
             this.preferred_transport.TabIndex = 11;
             this.preferred_transport.TabStop = false;
-            this.preferred_transport.Text = "Transport";
+            this.preferred_transport.Text = "Radio Button";
             // 
             // radioButton4
             // 
@@ -298,7 +320,7 @@ namespace WindowsFormsHeroApp
             this.groupBox1.Size = new System.Drawing.Size(229, 166);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Speed-Stamina-Strength";
+            this.groupBox1.Text = "Scroll bar";
             // 
             // label6
             // 
@@ -381,12 +403,175 @@ namespace WindowsFormsHeroApp
             this.hScrollBar1.Size = new System.Drawing.Size(204, 24);
             this.hScrollBar1.TabIndex = 0;
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.dateTime_arrive);
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.dateTime_depart);
+            this.groupBox2.Location = new System.Drawing.Point(279, 31);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(241, 158);
+            this.groupBox2.TabIndex = 13;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Date Picker";
+            // 
+            // dateTime_depart
+            // 
+            this.dateTime_depart.Location = new System.Drawing.Point(6, 42);
+            this.dateTime_depart.Name = "dateTime_depart";
+            this.dateTime_depart.Size = new System.Drawing.Size(200, 20);
+            this.dateTime_depart.TabIndex = 0;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(5, 26);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(65, 13);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Depart Date";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(5, 77);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(62, 13);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "Arrival Date";
+            // 
+            // dateTime_arrive
+            // 
+            this.dateTime_arrive.Location = new System.Drawing.Point(8, 97);
+            this.dateTime_arrive.Name = "dateTime_arrive";
+            this.dateTime_arrive.Size = new System.Drawing.Size(200, 20);
+            this.dateTime_arrive.TabIndex = 3;
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(8, 42);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDown1.TabIndex = 14;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label11);
+            this.groupBox3.Controls.Add(this.numericUpDown1);
+            this.groupBox3.Location = new System.Drawing.Point(279, 205);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(241, 78);
+            this.groupBox3.TabIndex = 14;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Number Picker";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(5, 26);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(94, 13);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "Check-in Luggage";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.pictureBox1);
+            this.groupBox4.Controls.Add(this.label10);
+            this.groupBox4.Location = new System.Drawing.Point(279, 297);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(241, 78);
+            this.groupBox4.TabIndex = 15;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Color Picker";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(5, 26);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(69, 13);
+            this.label10.TabIndex = 1;
+            this.label10.Text = "Color choice:";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Location = new System.Drawing.Point(82, 19);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.label12);
+            this.groupBox5.Controls.Add(this.lbl_progress);
+            this.groupBox5.Controls.Add(this.trackBar1);
+            this.groupBox5.Controls.Add(this.lbl_tracking);
+            this.groupBox5.Location = new System.Drawing.Point(279, 396);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(241, 98);
+            this.groupBox5.TabIndex = 16;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Progress Bar";
+            // 
+            // lbl_tracking
+            // 
+            this.lbl_tracking.AutoSize = true;
+            this.lbl_tracking.Location = new System.Drawing.Point(5, 26);
+            this.lbl_tracking.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_tracking.Name = "lbl_tracking";
+            this.lbl_tracking.Size = new System.Drawing.Size(0, 13);
+            this.lbl_tracking.TabIndex = 1;
+            // 
+            // trackBar1
+            // 
+            this.trackBar1.LargeChange = 3;
+            this.trackBar1.Location = new System.Drawing.Point(10, 19);
+            this.trackBar1.Maximum = 5;
+            this.trackBar1.Minimum = -5;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(225, 45);
+            this.trackBar1.TabIndex = 2;
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            // 
+            // lbl_progress
+            // 
+            this.lbl_progress.AutoSize = true;
+            this.lbl_progress.Location = new System.Drawing.Point(193, 75);
+            this.lbl_progress.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_progress.Name = "lbl_progress";
+            this.lbl_progress.Size = new System.Drawing.Size(13, 13);
+            this.lbl_progress.TabIndex = 4;
+            this.lbl_progress.Text = "5";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(122, 75);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(51, 13);
+            this.label12.TabIndex = 5;
+            this.label12.Text = "Progress:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(532, 689);
+            this.Controls.Add(this.groupBox5);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.preferred_transport);
             this.Controls.Add(this.btn_create);
@@ -397,13 +582,24 @@ namespace WindowsFormsHeroApp
             this.Controls.Add(this.lbl_name);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
-            this.Text = resources.GetString("$this.Text");
+            this.Text = "Hero App";
             this.checkbox_group.ResumeLayout(false);
             this.checkbox_group.PerformLayout();
             this.preferred_transport.ResumeLayout(false);
             this.preferred_transport.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -440,6 +636,22 @@ namespace WindowsFormsHeroApp
         public System.Windows.Forms.HScrollBar hScrollBar3;
         public System.Windows.Forms.HScrollBar hScrollBar2;
         public System.Windows.Forms.HScrollBar hScrollBar1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.DateTimePicker dateTime_arrive;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DateTimePicker dateTime_depart;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lbl_progress;
+        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.Label lbl_tracking;
     }
 }
 

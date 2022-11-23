@@ -12,6 +12,8 @@ namespace RentalCarGui
 {
     public partial class Form1 : Form
     {
+        int carId = 1;
+
         Store myStore = new Store();
         //BindingSource carInventoryBindingSource = new BindingSource();
         BindingSource cartBindingSource = new BindingSource();
@@ -23,12 +25,13 @@ namespace RentalCarGui
         private void btn_createCar_Click(object sender, EventArgs e)
         {
             //MessageBox.Show("Create car")
-            Car car1 = new Car(1, txt_make.Text, txt_model.Text, decimal.Parse(txt_price.Text));
+            Car car1 = new Car(carId, txt_make.Text, txt_model.Text, decimal.Parse(txt_price.Text));
             ListViewItem item = new ListViewItem(car1.Id.ToString());
             item.SubItems.Add(txt_make.Text);
             item.SubItems.Add(txt_model.Text);
             item.SubItems.Add(txt_price.Text);
             list_Inventory.Items.Add(item);
+            carId += 1;
             //carInventoryBindingSource.ResetBindings(false);
         }
 
@@ -60,6 +63,7 @@ namespace RentalCarGui
             decimal total = myStore.Checkout();
             lbl_total.Text = "$" + total.ToString();
             cartBindingSource.ResetBindings(false);
+
         }
     }
 }

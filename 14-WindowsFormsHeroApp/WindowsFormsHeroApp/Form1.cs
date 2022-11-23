@@ -66,16 +66,37 @@ namespace WindowsFormsHeroApp
             if (skills[7])
                 status_message += "Time Control ";
 
+            DateTime departDate = dateTime_depart.Value;
+            DateTime arriveDate = dateTime_arrive.Value;
+
+            decimal checkInLuggage = numericUpDown1.Value;
+
             status_message += " \n location : ";
             foreach(String city in cities)
             {
                 status_message += city + " ";
             }
 
-            status_message += "\n The hero prefer to travel by " + preferred_transport;
+            int progress = 0;
+            progress = trackBar1.Value;
+            status_message += "\n The hero prefer to travel by " + preferred_transport + "Departure at: " + departDate + "Arriving at: " + arriveDate + "check-in luggage" + checkInLuggage + "color choice : " + pictureBox1.BackColor.ToString() + " progress : " + progress;
 
             MessageBox.Show(status_message);
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            ColorDialog colorChoice = new ColorDialog();
+            if (colorChoice.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox1.BackColor = colorChoice.Color;
+            }
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            lbl_progress.Text = trackBar1.Value.ToString();
         }
     }
 }
