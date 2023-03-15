@@ -12,54 +12,61 @@ namespace Marketplace
 {
     public partial class Dashboard : Form
     {
+        private readonly Store myStore = new Store();
+        BindingSource cartBindingSource = new BindingSource();
+
         public Dashboard()
         {
             InitializeComponent();
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             // Hide other user controls
-            userControl21.Hide();
-            userControl31.Hide();
+            ordersControl.Hide();
+            inventoryControl.Hide();
 
             // Show current user controls
-            userControl11.Show();
-            userControl11.BringToFront();
+            shopControl.Show();
+            shopControl.BringToFront();
         }
 
         private void Account_Load(object sender, EventArgs e)
         {
-            userControl11.Hide();
-            userControl21.Hide();
-            userControl31.Hide();
+            shopControl.Hide();
+            ordersControl.Hide();
+            inventoryControl.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             // Hide other user controls
-            userControl11.Hide();
-            userControl31.Hide();
+            shopControl.Hide();
+            inventoryControl.Hide();
 
             // Show current user controls
-            userControl21.Show();
-            userControl21.BringToFront();
+            ordersControl.Show();
+            ordersControl.BringToFront();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             // Hide other user controls
-            userControl11.Hide();
-            userControl21.Hide();
+            shopControl.Hide();
+            ordersControl.Hide();
 
             // Show current user controls
-            userControl31.Show();
-            userControl31.BringToFront();
+            inventoryControl.Show();
+            inventoryControl.BringToFront();
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void btn_checkout_Click(object sender, EventArgs e)
         {
-
+            decimal total = myStore.Checkout();
+            lbl_total.Text = "$" + total.ToString();
+            cartBindingSource.ResetBindings(false);
         }
     }
 }
