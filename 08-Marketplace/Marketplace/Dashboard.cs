@@ -19,13 +19,18 @@ namespace Marketplace
         {
             InitializeComponent();
 
+            inventoryControl.InventoryCreated += InventoryControl_InventoryCreated;
+        }
 
+        private void InventoryControl_InventoryCreated(object sender, ProductEventArgs e)
+        {
+            myStore.ProductList.Add(e.Product);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             // Hide other user controls
-            ordersControl.Hide();
+            orderControl.Hide();
             inventoryControl.Hide();
 
             // Show current user controls
@@ -36,7 +41,7 @@ namespace Marketplace
         private void Account_Load(object sender, EventArgs e)
         {
             shopControl.Hide();
-            ordersControl.Hide();
+            orderControl.Hide();
             inventoryControl.Hide();
         }
 
@@ -47,15 +52,15 @@ namespace Marketplace
             inventoryControl.Hide();
 
             // Show current user controls
-            ordersControl.Show();
-            ordersControl.BringToFront();
+            orderControl.Show();
+            orderControl.BringToFront();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             // Hide other user controls
             shopControl.Hide();
-            ordersControl.Hide();
+            orderControl.Hide();
 
             // Show current user controls
             inventoryControl.Show();

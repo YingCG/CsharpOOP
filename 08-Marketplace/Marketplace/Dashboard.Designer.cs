@@ -41,9 +41,9 @@ namespace Marketplace
             this.ShoppingCart = new System.Windows.Forms.ListBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.inventoryControl = new Marketplace.UserControl3();
-            this.ordersControl = new Marketplace.UserControl2();
-            this.shopControl = new Marketplace.UserControl1();
+            this.inventoryControl = new Marketplace.InventoryControl();
+            this.orderControl = new Marketplace.OrderControl();
+            this.shopControl = new Marketplace.ShopControl();
             this.btn_checkout = new System.Windows.Forms.Button();
             this.lbl_total = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -207,12 +207,12 @@ namespace Marketplace
             // 
             // userControl21
             // 
-            this.ordersControl.BackColor = System.Drawing.Color.White;
-            this.ordersControl.Location = new System.Drawing.Point(266, 81);
-            this.ordersControl.Margin = new System.Windows.Forms.Padding(1);
-            this.ordersControl.Name = "userControl21";
-            this.ordersControl.Size = new System.Drawing.Size(467, 357);
-            this.ordersControl.TabIndex = 6;
+            this.orderControl.BackColor = System.Drawing.Color.White;
+            this.orderControl.Location = new System.Drawing.Point(266, 81);
+            this.orderControl.Margin = new System.Windows.Forms.Padding(1);
+            this.orderControl.Name = "userControl21";
+            this.orderControl.Size = new System.Drawing.Size(467, 357);
+            this.orderControl.TabIndex = 6;
             // 
             // userControl11
             // 
@@ -273,7 +273,7 @@ namespace Marketplace
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.ShoppingCart);
             this.Controls.Add(this.inventoryControl);
-            this.Controls.Add(this.ordersControl);
+            this.Controls.Add(this.orderControl);
             this.Controls.Add(this.shopControl);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -297,9 +297,9 @@ namespace Marketplace
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private UserControl1 shopControl;
-        private UserControl2 ordersControl;
-        private UserControl3 inventoryControl;
+        private ShopControl shopControl;
+        private OrderControl orderControl;
+        private InventoryControl inventoryControl;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textAddress;
