@@ -16,5 +16,18 @@ namespace Marketplace
         {
             InitializeComponent();
         }
+
+        internal void UpdateProductList(List<Product> productList)
+        {
+            list_shop.Items.Clear();
+
+            foreach (Product product in productList)
+            {
+                ListViewItem item = new ListViewItem(product.Id.ToString());
+                item.SubItems.Add(product.ProductName);
+                item.SubItems.Add(product.Price.ToString("C"));
+                list_shop.Items.Add(item);
+            }
+        }
     }
 }

@@ -30,10 +30,9 @@ namespace Marketplace
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.list_Inventory = new System.Windows.Forms.ListView();
+            this.list_shop = new System.Windows.Forms.ListView();
             this.column_Id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.column_made = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.column_model = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.column_product = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.column_price = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
@@ -48,51 +47,45 @@ namespace Marketplace
             this.label1.TabIndex = 0;
             this.label1.Text = "Home";
             // 
-            // list_Inventory
+            // list_shop
             // 
-            this.list_Inventory.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.list_shop.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.column_Id,
-            this.column_made,
-            this.column_model,
+            this.column_product,
             this.column_price});
-            this.list_Inventory.FullRowSelect = true;
-            this.list_Inventory.HideSelection = false;
-            this.list_Inventory.Location = new System.Drawing.Point(27, 77);
-            this.list_Inventory.Name = "list_Inventory";
-            this.list_Inventory.Size = new System.Drawing.Size(413, 256);
-            this.list_Inventory.TabIndex = 19;
-            this.list_Inventory.UseCompatibleStateImageBehavior = false;
-            this.list_Inventory.View = System.Windows.Forms.View.Details;
+            this.list_shop.FullRowSelect = true;
+            this.list_shop.HideSelection = false;
+            this.list_shop.Location = new System.Drawing.Point(27, 77);
+            this.list_shop.Name = "list_shop";
+            this.list_shop.Size = new System.Drawing.Size(413, 256);
+            this.list_shop.TabIndex = 19;
+            this.list_shop.UseCompatibleStateImageBehavior = false;
+            this.list_shop.View = System.Windows.Forms.View.Details;
             // 
             // column_Id
             // 
             this.column_Id.Text = "Id";
             this.column_Id.Width = 25;
             // 
-            // column_made
+            // column_product
             // 
-            this.column_made.Text = "Product";
-            this.column_made.Width = 256;
-            // 
-            // column_model
-            // 
-            this.column_model.Text = "Quantity";
-            this.column_model.Width = 53;
+            this.column_product.Text = "Product";
+            this.column_product.Width = 256;
             // 
             // column_price
             // 
             this.column_price.Text = "Price";
             this.column_price.Width = 240;
             // 
-            // UserControl1
+            // ShopControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.Controls.Add(this.list_Inventory);
+            this.Controls.Add(this.list_shop);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "UserControl1";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "ShopControl";
             this.Size = new System.Drawing.Size(467, 357);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -102,10 +95,9 @@ namespace Marketplace
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListView list_Inventory;
+        private System.Windows.Forms.ListView list_shop;
         private System.Windows.Forms.ColumnHeader column_Id;
-        private System.Windows.Forms.ColumnHeader column_made;
-        private System.Windows.Forms.ColumnHeader column_model;
+        private System.Windows.Forms.ColumnHeader column_product;
         private System.Windows.Forms.ColumnHeader column_price;
     }
 }

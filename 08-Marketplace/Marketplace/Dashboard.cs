@@ -25,6 +25,7 @@ namespace Marketplace
         private void InventoryControl_InventoryCreated(object sender, ProductEventArgs e)
         {
             myStore.ProductList.Add(e.Product);
+            shopControl.UpdateProductList(myStore.ProductList);
         }
 
         private void button1_Click(object sender, EventArgs e)
