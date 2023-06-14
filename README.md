@@ -31,6 +31,8 @@ https://www.figma.com/proto/wieVbN1jciFnToxB0qdkIY/Event-driven-Programming?node
 - 12 - ReadTextFile
 - 13 - FileSystemDemo
 - 14 - HeroApp
+- IDmaker
+- VideoPlayer
 
 ### Chapter 7 - MongoDB connection string with Window Form App
 - 15 - MongoDBdemo
