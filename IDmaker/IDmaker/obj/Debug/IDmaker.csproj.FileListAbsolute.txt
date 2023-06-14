@@ -1,0 +1,17 @@
+F:\YingYing\CsharpOOP-WindowsForm\IDmaker\IDmaker\bin\Debug\IDmaker.exe.config
+F:\YingYing\CsharpOOP-WindowsForm\IDmaker\IDmaker\bin\Debug\IDmaker.exe
+F:\YingYing\CsharpOOP-WindowsForm\IDmaker\IDmaker\bin\Debug\IDmaker.pdb
+F:\YingYing\CsharpOOP-WindowsForm\IDmaker\IDmaker\bin\Debug\AForge.dll
+F:\YingYing\CsharpOOP-WindowsForm\IDmaker\IDmaker\bin\Debug\AForge.Video.DirectShow.dll
+F:\YingYing\CsharpOOP-WindowsForm\IDmaker\IDmaker\bin\Debug\AForge.Video.dll
+F:\YingYing\CsharpOOP-WindowsForm\IDmaker\IDmaker\bin\Debug\AForge.xml
+F:\YingYing\CsharpOOP-WindowsForm\IDmaker\IDmaker\bin\Debug\AForge.Video.xml
+F:\YingYing\CsharpOOP-WindowsForm\IDmaker\IDmaker\bin\Debug\AForge.Video.DirectShow.xml
+F:\YingYing\CsharpOOP-WindowsForm\IDmaker\IDmaker\obj\Debug\IDmaker.csproj.AssemblyReference.cache
+F:\YingYing\CsharpOOP-WindowsForm\IDmaker\IDmaker\obj\Debug\IDmaker.Form1.resources
+F:\YingYing\CsharpOOP-WindowsForm\IDmaker\IDmaker\obj\Debug\IDmaker.Properties.Resources.resources
+F:\YingYing\CsharpOOP-WindowsForm\IDmaker\IDmaker\obj\Debug\IDmaker.csproj.GenerateResource.cache
+F:\YingYing\CsharpOOP-WindowsForm\IDmaker\IDmaker\obj\Debug\IDmaker.csproj.CoreCompileInputs.cache
+F:\YingYing\CsharpOOP-WindowsForm\IDmaker\IDmaker\obj\Debug\IDmaker.csproj.CopyComplete
+F:\YingYing\CsharpOOP-WindowsForm\IDmaker\IDmaker\obj\Debug\IDmaker.exe
+F:\YingYing\CsharpOOP-WindowsForm\IDmaker\IDmaker\obj\Debug\IDmaker.pdb
